@@ -10,7 +10,7 @@ class Car extends Vehicle {
         super(color);
     }
     //override the abstract class by redefining the function
-    drive(): void {
+    private drive(): void {
         console.log('vroom');
     }
     startDrivingProcess(): void {
