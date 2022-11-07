@@ -10,6 +10,15 @@ const oldCivic = {
         return `Name: ${this.name}\nYear: ${this.year}\nBroken?: ${this.broken}`;
     },
 };
+
+const myDrink = {
+    color: 'brown',
+    carbonated: true,
+    sugar: 40,
+    summary(): string {
+        return `My Drink is ${this.color}\nCarbonated?: ${this.carbonated}\nIt contains: ${this.sugar} of sugar`;
+    },
+};
 //use interface instead of the following lond definition
 // vehicle: {
 //     name: string;
@@ -21,3 +30,4 @@ const printSummary = (item: Reportable): void => {
 };
 
 printSummary(oldCivic);
+printSummary(myDrink);

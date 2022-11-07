@@ -1,7 +1,7 @@
 const drink = {
     color: 'brown',
     carbonated: true,
-    suger: 40,
+    sugar: 40,
 };
 
 type Drink = [string, boolean, number];
