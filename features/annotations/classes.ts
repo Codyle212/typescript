@@ -6,6 +6,9 @@ class Vehicle {
 }
 
 class Car extends Vehicle {
+    constructor(public wheel: number, color: string) {
+        super(color);
+    }
     //override the abstract class by redefining the function
     drive(): void {
         console.log('vroom');
@@ -16,7 +19,7 @@ class Car extends Vehicle {
     }
 }
 
-const carA = new Car('red');
+const carA = new Car(4, 'red');
 carA.startDrivingProcess();
 
 const vehicle = new Vehicle('white');
