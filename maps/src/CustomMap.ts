@@ -1,5 +1,5 @@
 //Instruction to every other class on how they can be a agrument to add Maker
-interface Mappable {
+export interface Mappable {
     location: {
         latitude: number;
         longitude: number;
