@@ -1,6 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Sorter = void 0;
+// export interface Sortable {
+//     length: number;
+//     compare(leftIndex: number, rightIndex: number): boolean;
+//     swap(leftIndex: number, rightIndex: number): void;
+// }
 class Sorter {
     sort() {
         const { length } = this;
