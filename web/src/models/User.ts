@@ -15,4 +15,17 @@ export class User {
     constructor(attrs: UserProps) {
         this.attributes = new Attributes<UserProps>(attrs);
     }
+
+    get on() {
+        //get back a reference to the on function in eventing
+        return this.events.on;
+    }
+
+    get trigger() {
+        return this.events.trigger;
+    }
+
+    get get() {
+        return this.events.get;
+    }
 }
