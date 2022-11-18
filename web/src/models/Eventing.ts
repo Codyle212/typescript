@@ -1,6 +1,7 @@
 type Callback = () => void;
 
 export class Eventing {
+    //each type of events have an array of callbacks
     events: {
         [key: string]: Callback[];
     } = {};
