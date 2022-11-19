@@ -1,9 +1,9 @@
-import { User } from './models/User';
-//{ name: 'Amy', age: 25 }
-const user = User.buildUser({ id: 1, name: 'Alice', age: 26 });
+import { Collection } from './models/Collection';
+import { User, UserProps } from './models/User';
 
-user.on('change', () => {
-    console.log(user);
+const collection = User.buildUserCollection();
+
+collection.on('change', () => {
+    console.log(collection);
 });
-
-user.fetch();
+collection.fetch();
