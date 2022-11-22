@@ -17,14 +17,14 @@ class RootController {
             res.status(200).send(`
             <div>
                 <div>You are logged in</div>
-                <a href="./logout">Log out</a>
+                <a href="./auth/logout">Log out</a>
             </div>
         `);
         } else {
             res.status(401).send(`
             <div>
                 <div>You are not logged in</div>
-                <a href="./login">Log In</a>
+                <a href="./auth/login">Log In</a>
             </div>
         `);
         }
