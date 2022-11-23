@@ -4,9 +4,11 @@ interface AppProps {
     color?: string;
 }
 
+const url = import.meta.env.VITE_TODO_URL;
+
 class App extends React.Component {
     render() {
-        return <div>Hi</div>;
+        return <div>{url}</div>;
     }
 }
 export default App;
